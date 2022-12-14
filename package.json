@@ -4,5 +4,6 @@
   "description": "Boilerplate for React application",
   "main": "index.js",
   "author": "Ilshat Ismagilov",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:StarkyLife/react-stub.git"
 }
