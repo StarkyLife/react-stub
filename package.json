@@ -1,0 +1,8 @@
+{
+  "name": "react-stub",
+  "version": "0.1.0",
+  "description": "Boilerplate for React application",
+  "main": "index.js",
+  "author": "Ilshat Ismagilov",
+  "license": "MIT"
+}
