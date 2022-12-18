@@ -17,13 +17,6 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: "babel-loader",
         exclude: /node_modules/,
-        options: {
-          presets: [
-            "@babel/preset-env",
-            "@babel/preset-typescript",
-            "@babel/preset-react",
-          ],
-        },
       },
       {
         test: /\.css$/,
