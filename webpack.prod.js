@@ -1,18 +1,18 @@
-const { merge } = require("webpack-merge");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+const { merge } = require('webpack-merge');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
-const baseConfig = require("./webpack.base");
+const baseConfig = require('./webpack.base');
 
 module.exports = merge(baseConfig, {
-  mode: "production",
+  mode: 'production',
   externals: {
-    react: "React",
-    "react-dom": "ReactDOM",
+    react: 'React',
+    'react-dom': 'ReactDOM',
   },
   plugins: [
     new BundleAnalyzerPlugin({
-      analyzerMode: "static",
-      reportFilename: "app-bundle-sizes.html",
+      analyzerMode: 'static',
+      reportFilename: 'app-bundle-sizes.html',
       openAnalyzer: false,
     }),
   ],
