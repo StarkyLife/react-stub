@@ -7,9 +7,11 @@
   "license": "MIT",
   "repository": "git@github.com:StarkyLife/react-stub.git",
   "scripts": {
+    "prepare": "husky install",
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "format": "pretty-quick",
+    "lint": "eslint \"**/*.{ts,tsx}\" --ext .ts,.tsx",
     "test": "jest"
   },
   "devDependencies": {
@@ -24,9 +26,14 @@
     "@types/jest": "^29.2.4",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
     "babel-jest": "^29.3.1",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.3",
+    "eslint": "^8.30.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.11",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
@@ -38,7 +45,8 @@
     "webpack-bundle-analyzer": "^4.7.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "husky": "^8.0.0"
   },
   "dependencies": {
     "react": "^18.2.0",
