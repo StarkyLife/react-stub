@@ -3,4 +3,5 @@
 
 yarn format --staged
 yarn lint
+yarn ts:check
 yarn test

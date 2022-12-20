@@ -21,4 +21,7 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
   ],
   plugins: ['react', '@typescript-eslint', 'jsx-a11y'],
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+  },
 };

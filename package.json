@@ -11,7 +11,8 @@
     "build": "webpack --config webpack.prod.js",
     "dev": "webpack serve --config webpack.dev.js",
     "format": "pretty-quick",
-    "lint": "eslint \"**/*.{ts,tsx}\" --ext .ts,.tsx",
+    "lint": "eslint --max-warnings 0 \"**/*.{ts,tsx}\" --ext .ts,.tsx",
+    "ts:check": "tsc",
     "test": "jest"
   },
   "devDependencies": {
