@@ -16,13 +16,7 @@ describe('App', () => {
     expect(screen.getByTestId('count')).toHaveTextContent('0');
 
     await userEvent.click(screen.getByRole('button'));
-    await userEvent.click(screen.getByRole('button'));
-    await userEvent.click(screen.getByRole('button'));
-    await userEvent.click(screen.getByRole('button'));
-    await userEvent.click(screen.getByRole('button'));
-    await userEvent.click(screen.getByRole('button'));
 
-    expect(screen.getByTestId('count')).toHaveTextContent('6');
-    expect(screen.getByText('Keep going!')).toBeInTheDocument();
+    expect(screen.getByTestId('count')).toHaveTextContent('1');
   });
 });
