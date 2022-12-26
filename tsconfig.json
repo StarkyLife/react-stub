@@ -10,7 +10,7 @@
 
     /* Modules */
     "module": "esnext",
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
 
     /* Type Checking */

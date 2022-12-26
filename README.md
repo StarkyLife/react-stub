@@ -5,3 +5,4 @@
 3. `git init`
 4. Update package.json meta information
 5. Update README.md
+6. Update index.html
